@@ -4,9 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Ubuntu-Bold.ttf</string>
-		<string>Ubuntu-Light.ttf</string>
-		<string>Ubuntu-Regular.ttf</string>
+		<string>UbuntuBold.ttf</string>
+		<string>UbuntuLight.ttf</string>
+		<string>UbuntuRegular.ttf</string>
 	</array>
 </dict>
 </plist>
