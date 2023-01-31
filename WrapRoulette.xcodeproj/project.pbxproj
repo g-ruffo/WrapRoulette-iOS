@@ -15,6 +15,7 @@
 		79455E84296CE20D00C807B2 /* WrapRouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79455E83296CE20D00C807B2 /* WrapRouletteUITests.swift */; };
 		79455E86296CE20D00C807B2 /* WrapRouletteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79455E85296CE20D00C807B2 /* WrapRouletteUITestsLaunchTests.swift */; };
 		798A9AEB2989C645003CCD5F /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A9AEA2989C645003CCD5F /* PasswordTextField.swift */; };
+		798A9AEE2989CE58003CCD5F /* UtilityViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A9AED2989CE58003CCD5F /* UtilityViews.swift */; };
 		79BA6B3D2988A72A009E7732 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B3C2988A72A009E7732 /* Localizable.strings */; };
 		79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B3F2988AA34009E7732 /* SubmitButton.swift */; };
 		79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */; };
@@ -57,6 +58,7 @@
 		79455E83296CE20D00C807B2 /* WrapRouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRouletteUITests.swift; sourceTree = "<group>"; };
 		79455E85296CE20D00C807B2 /* WrapRouletteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRouletteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		798A9AEA2989C645003CCD5F /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		798A9AED2989CE58003CCD5F /* UtilityViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityViews.swift; sourceTree = "<group>"; };
 		79BA6B3C2988A72A009E7732 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		79BA6B3F2988AA34009E7732 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
@@ -155,6 +157,14 @@
 			path = WrapRouletteUITests;
 			sourceTree = "<group>";
 		};
+		798A9AEC2989CE38003CCD5F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				798A9AED2989CE58003CCD5F /* UtilityViews.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		79BA6B3E2988A9D9009E7732 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		79BA6B412988AA7C009E7732 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				798A9AEC2989CE38003CCD5F /* Utils */,
 				79BA6B6B2988F2CF009E7732 /* Fonts */,
 				79455E6C296CE20D00C807B2 /* Assets.xcassets */,
 				79BA6B3C2988A72A009E7732 /* Localizable.strings */,
@@ -366,6 +377,7 @@
 				798A9AEB2989C645003CCD5F /* PasswordTextField.swift in Sources */,
 				79455E6B296CE20A00C807B2 /* ContentView.swift in Sources */,
 				79BA6B4C2988E49C009E7732 /* Member.swift in Sources */,
+				798A9AEE2989CE58003CCD5F /* UtilityViews.swift in Sources */,
 				79455E69296CE20A00C807B2 /* WrapRouletteApp.swift in Sources */,
 				79BA6B492988E2EC009E7732 /* Feedback.swift in Sources */,
 				79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */,
