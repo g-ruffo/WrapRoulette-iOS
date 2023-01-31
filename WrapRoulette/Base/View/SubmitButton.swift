@@ -10,6 +10,7 @@ import SwiftUI
 private var buttonCornerRadius: CGFloat = 12
 private var buttonPaddingHorizontal: CGFloat = 40
 
+
 struct SubmitButton: View {
     var text: String = "Submit"
     @State var isEnabled = true
@@ -28,7 +29,7 @@ struct SubmitButton: View {
                     .textCase(.uppercase)
                     .padding(.horizontal, buttonPaddingHorizontal)
                     .padding(.vertical)
-
+                
             }
             .disabled(isEnabled)
             .background(buttonColor)
@@ -41,8 +42,11 @@ struct SubmitButton: View {
 
 struct SubmitButton_Previews: PreviewProvider {
     static var previews: some View {
-        SubmitButton() {
-            
+        VStack {
+            SubmitButton() {
+                
+            }
         }
     }
 }
+
