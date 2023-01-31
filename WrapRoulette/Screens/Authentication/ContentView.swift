@@ -16,7 +16,7 @@ struct ContentView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State var emailAttempts: CGFloat = 0
-
+    @State var passwordAttempts: CGFloat = 0
 
     var body: some View {
         VStack {
@@ -29,7 +29,7 @@ struct ContentView: View {
             
             Group{
                 StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
-                PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password)
+                PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password, invalidAttempts: $passwordAttempts)
             }
                     
             Button {
@@ -47,6 +47,8 @@ struct ContentView: View {
             SubmitButton(text: "Login", isEnabled: $buttonIsEnabled) {
                 withAnimation(.easeInOut) {
                     self.emailAttempts += 1
+                    self.passwordAttempts += 1
+
                 }
             }
             Spacer()

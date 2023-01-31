@@ -13,6 +13,7 @@ struct PasswordTextField: View {
     var textHint: String = "Enter Password"
     @Binding var textInput: String
     @State private var isSecured: Bool = true
+    @Binding var invalidAttempts: CGFloat
     
     var body: some View {
         ZStack(alignment: .trailing) {
@@ -27,20 +28,19 @@ struct PasswordTextField: View {
                             .foregroundColor(Color("BluePrimary"))
                             .frame(minWidth: 0, maxWidth: 30)
                             .frame(minHeight: 0, maxHeight: 33)
-                        if isSecured {
-                            SecureField(textHint, text: $textInput)
-                                .font(Font.system(size: textFieldFontSize, design: .default))
-                                .padding(.vertical, 10)
-                            
-                            
-                        } else {
-                            TextField(textHint, text: $textInput)
-                                .font(Font.system(size: textFieldFontSize, design: .default))
-                                .padding(.vertical, 10)
-                                .autocorrectionDisabled()
-                                .autocapitalization(.none)
-        
+                        Group {
+                            if isSecured { SecureField(textHint, text: $textInput) }
+                            else { TextField(textHint, text: $textInput) }
                         }
+                        .font(Font.system(size: textFieldFontSize, design: .default))
+                        .padding(.vertical, 10)
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
+                        .onChange(of: textInput, perform: { newValue in
+                            if invalidAttempts != 0 { invalidAttempts = 0}
+                        })
+                       
+                        
                         Button(action: {
                             isSecured.toggle()
                         }) {
@@ -52,6 +52,13 @@ struct PasswordTextField: View {
                             .padding(.horizontal, 15)
                             .background(Color("LoginInputLayoutBoxColor"), alignment: .center)
                             .cornerRadius(5)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(lineWidth: 2)
+                                    .foregroundColor(invalidAttempts == 0 ? .clear : .red)
+                                )
+                                .modifier(ErrorShakeTextFieldEffect(animatableData: CGFloat(invalidAttempts)))
+                    
                     Spacer(minLength: horizontalTextFieldSpacerWidth)
                 }
                 Text("\(textInput.count)/24")
@@ -66,10 +73,11 @@ struct PasswordTextField: View {
 
 struct PasswordTextField_Previews: PreviewProvider {
     @State static var text = "Password"
+    @State static var attempt: CGFloat = 1
 
     static var previews: some View {
         VStack {
-            PasswordTextField(textInput: $text)
+            PasswordTextField(textInput: $text, invalidAttempts: $attempt)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("BluePrimary"))
