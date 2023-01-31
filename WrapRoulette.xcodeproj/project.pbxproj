@@ -64,6 +64,7 @@
 		79BA6B6C2988F2F1009E7732 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		79BA6B6D2988F2F1009E7732 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		79BA6B6E2988F2F1009E7732 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		79BA6B722988F446009E7732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 		79455E67296CE20A00C807B2 /* WrapRoulette */ = {
 			isa = PBXGroup;
 			children = (
+				79BA6B722988F446009E7732 /* Info.plist */,
 				79BA6B472988E2B7009E7732 /* Data */,
 				79BA6B412988AA7C009E7732 /* Resources */,
 				79BA6B3E2988A9D9009E7732 /* Base */,
@@ -508,6 +510,7 @@
 				DEVELOPMENT_TEAM = QL7G84W3RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WrapRoulette/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -538,6 +541,7 @@
 				DEVELOPMENT_TEAM = QL7G84W3RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WrapRoulette/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
