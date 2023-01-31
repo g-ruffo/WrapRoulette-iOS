@@ -27,8 +27,8 @@ struct ContentView: View {
             }
             
             Group{
-                InputEditText(leadingIcon: "mail", textHint: "Enter your email", textInput: $email)
-                InputEditText(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password, isPassword: true)
+                StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email)
+                PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password)
             }
                     
             Button {

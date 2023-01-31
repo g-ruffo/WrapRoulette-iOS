@@ -14,6 +14,7 @@
 		79455E7A296CE20D00C807B2 /* WrapRouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79455E79296CE20D00C807B2 /* WrapRouletteTests.swift */; };
 		79455E84296CE20D00C807B2 /* WrapRouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79455E83296CE20D00C807B2 /* WrapRouletteUITests.swift */; };
 		79455E86296CE20D00C807B2 /* WrapRouletteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79455E85296CE20D00C807B2 /* WrapRouletteUITestsLaunchTests.swift */; };
+		798A9AEB2989C645003CCD5F /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A9AEA2989C645003CCD5F /* PasswordTextField.swift */; };
 		79BA6B3D2988A72A009E7732 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B3C2988A72A009E7732 /* Localizable.strings */; };
 		79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B3F2988AA34009E7732 /* SubmitButton.swift */; };
 		79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */; };
@@ -24,7 +25,7 @@
 		79BA6B6F2988F2F2009E7732 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B6C2988F2F1009E7732 /* Ubuntu-Bold.ttf */; };
 		79BA6B702988F2F2009E7732 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B6D2988F2F1009E7732 /* Ubuntu-Regular.ttf */; };
 		79BA6B712988F2F2009E7732 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B6E2988F2F1009E7732 /* Ubuntu-Light.ttf */; };
-		79BA6B7A29890AEB009E7732 /* InputEditText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B7929890AEB009E7732 /* InputEditText.swift */; };
+		79BA6B7A29890AEB009E7732 /* StandardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B7929890AEB009E7732 /* StandardTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		79455E7F296CE20D00C807B2 /* WrapRouletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrapRouletteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79455E83296CE20D00C807B2 /* WrapRouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRouletteUITests.swift; sourceTree = "<group>"; };
 		79455E85296CE20D00C807B2 /* WrapRouletteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRouletteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		798A9AEA2989C645003CCD5F /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		79BA6B3C2988A72A009E7732 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		79BA6B3F2988AA34009E7732 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		79BA6B6D2988F2F1009E7732 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		79BA6B6E2988F2F1009E7732 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 		79BA6B722988F446009E7732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		79BA6B7929890AEB009E7732 /* InputEditText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEditText.swift; sourceTree = "<group>"; };
+		79BA6B7929890AEB009E7732 /* StandardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +178,8 @@
 			children = (
 				79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */,
 				79BA6B3F2988AA34009E7732 /* SubmitButton.swift */,
-				79BA6B7929890AEB009E7732 /* InputEditText.swift */,
+				79BA6B7929890AEB009E7732 /* StandardTextField.swift */,
+				798A9AEA2989C645003CCD5F /* PasswordTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798A9AEB2989C645003CCD5F /* PasswordTextField.swift in Sources */,
 				79455E6B296CE20A00C807B2 /* ContentView.swift in Sources */,
 				79BA6B4C2988E49C009E7732 /* Member.swift in Sources */,
 				79455E69296CE20A00C807B2 /* WrapRouletteApp.swift in Sources */,
@@ -368,7 +372,7 @@
 				79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */,
 				79BA6B4E2988E51B009E7732 /* Message.swift in Sources */,
 				79BA6B502988E55D009E7732 /* Pool.swift in Sources */,
-				79BA6B7A29890AEB009E7732 /* InputEditText.swift in Sources */,
+				79BA6B7A29890AEB009E7732 /* StandardTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
