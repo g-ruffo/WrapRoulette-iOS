@@ -19,10 +19,6 @@ let disabledButtonSpringAnimationDuration: Double = 0.2
 let buttonIconFontSize: CGFloat = 38
 let buttonTextFontSize: CGFloat = 18
 
-
-
-
-
 struct ExpandableFloatingActionButton: View {
     @Binding var isEnabled: Bool
     @State var isExpanded = false

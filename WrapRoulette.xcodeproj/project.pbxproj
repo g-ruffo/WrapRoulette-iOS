@@ -137,7 +137,7 @@
 		79BA6B3E2988A9D9009E7732 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				79BA6B462988C580009E7732 /* View */,
+				79BA6B462988C580009E7732 /* Views */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -151,13 +151,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		79BA6B462988C580009E7732 /* View */ = {
+		79BA6B462988C580009E7732 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */,
 				79BA6B3F2988AA34009E7732 /* SubmitButton.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
