@@ -10,23 +10,22 @@ import SwiftUI
 private var buttonCornerRadius: CGFloat = 12
 private var buttonPaddingHorizontal: CGFloat = 40
 
-
 struct SubmitButton: View {
     var text: String = "Submit"
-    @State var isEnabled = true
+    @Binding var isEnabled: Bool
     
-    var buttonColor: Color {
-        isEnabled ? Color("ButtonOrangeEnabled") : Color("ButtonOrangeDisabled")
-    }
+    var buttonColor: Color = Color("ButtonOrangeEnabled")
+    var textColor: Color = Color("BluePrimary")
+    
     var clicked: () -> Void
     
     var body: some View {
         HStack {
             Button(action: clicked) {
                 Text(text)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("BluePrimary"))
+                    .foregroundColor(.white)
                     .textCase(.uppercase)
+                    .font(.system(size: buttonTextFontSize, weight: .bold))
                     .padding(.horizontal, buttonPaddingHorizontal)
                     .padding(.vertical)
                 
@@ -34,18 +33,20 @@ struct SubmitButton: View {
             .disabled(isEnabled)
             .background(buttonColor)
             .cornerRadius(buttonCornerRadius)
-            .scaleEffect(isEnabled ? 1 : 0.8)
-            .animation(.easeInOut)
+            .opacity(isEnabled ? 1.0 : disabledButtonOpacity)
+            .shadow(color: isEnabled ? .black : .clear, radius: shadowRadius)
+            .scaleEffect(isEnabled ? 1 : disabledButtonScale)
+            .animation(.spring(response: disabledButtonSpringAnimationResponse,
+                               dampingFraction: disabledButtonSpringAnimationDamping, blendDuration: disabledButtonSpringAnimationDuration))
         }
     }
 }
 
 struct SubmitButton_Previews: PreviewProvider {
+    @State static var enabled = true
     static var previews: some View {
         VStack {
-            SubmitButton() {
-                
-            }
+            SubmitButton(isEnabled: $enabled) {}
         }
     }
 }
