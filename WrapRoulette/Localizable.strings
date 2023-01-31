@@ -1,0 +1,659 @@
+/* 
+  Localizable.strings
+  WrapRoulette
+
+  Created by Grayson Ruffo on 2023-01-30.
+  
+*/
+
+
+/*  */
+"app_name" = "Wrap Roulette";
+
+/*  */
+"navigation_drawer_open" = "Open navigation drawer";
+
+/*  */
+"navigation_drawer_close" = "Close navigation drawer";
+
+/*  */
+"open" = "Open";
+
+/*  */
+"close" = "Close";
+
+/*  */
+"nav_header_title" = "Android Studio";
+
+/*  */
+"nav_header_subtitle" = "android.studio@android.com";
+
+/*  */
+"nav_header_desc" = "Navigation header";
+
+/*  */
+"action_settings" = "Settings";
+
+/*  */
+"menu_home" = "Home";
+
+/*  */
+"menu_gallery" = "Gallery";
+
+/*  */
+"menu_slideshow" = "Slideshow";
+
+/*  */
+"statistics" = "Statistics";
+
+/*  */
+"chat" = "Chat";
+
+/*  */
+"hello_blank_fragment" = "Hello blank fragment";
+
+/*  */
+"invalidEmailAddressHelper" = "Invalid Email Address";
+
+/*  */
+"logout" = "Logout";
+
+/*  */
+"join_pool" = "Join Pool";
+
+/*  */
+"new_pool" = "New Pool";
+
+/*  */
+"pools" = "Your Pools";
+
+/*  */
+"account" = "Account";
+
+/*  */
+"add_member" = "Add Member";
+
+/*  */
+"edit_pool" = "Edit Pool";
+
+/*  */
+"leave_pool" = "Leave Pool";
+
+/*  */
+"membersHeaderTitle" = "Members";
+
+/*  */
+"finalBetsHeaderTitle" = "Final Bets";
+
+/*  */
+"betsHeaderTitle" = "Bets";
+
+/*  */
+"administratorHeaderTitle" = "Administrator";
+
+/*  */
+"currentTimeTitle" = "Current Time";
+
+/*  */
+"timeWorkedTitle" = "Time Worked";
+
+/*  */
+"wrapTimeHeaderTitle" = "Wrap Time";
+
+/*  */
+"startTimeTitle" = "Start Time";
+
+/*  */
+"positionTitle" = "Position";
+
+/*  */
+"currentBetTitle" = "Current Bet";
+
+/*  */
+"memberBidsTitle" = "Member Bids";
+
+/*  */
+"marginHeaderTitle" = "Margin";
+
+/*  */
+"adminHeaderTitle" = "Admin";
+
+/*  */
+"totalPotHeaderTitle" = "Total Pot";
+
+/*  */
+"forgotPassword" = "Forgot password?";
+
+/*  */
+"clickToSignUp" = "Not registered? Click to signup";
+
+/*  */
+"signIn" = "Sign In";
+
+/*  */
+"typeYourPassword" = "Type your password";
+
+/*  */
+"typeYourEmail" = "Type your email";
+
+/*  */
+"roulette" = "Roulette";
+
+/*  */
+"wrap" = "Wrap";
+
+/*  */
+"logoHeaderImage" = "Logo header image";
+
+/*  */
+"resetPasswordTitle" = "Reset Password";
+
+/*  */
+"resetPasswordSubtitle" = "Enter your email address to reset your password.";
+
+/*  */
+"reset" = "Reset";
+
+/*  */
+"backButtonDescription" = "Back image";
+
+/*  */
+"signUpTitle" = "Sign Up";
+
+/*  */
+"signUpSubtitle" = "Enter your details to register";
+
+/*  */
+"typeYourName" = "Type your name";
+
+/*  */
+"enterYourDepartment" = "Enter your department";
+
+/*  */
+"signUp" = "Sign Up";
+
+/*  */
+"productionName" = "Production";
+
+/*  */
+"poolPassword" = "Password";
+
+/*  */
+"date" = "Date";
+
+/*  */
+"join" = "Join";
+
+/*  */
+"startTime" = "Start time";
+
+/*  */
+"finalBets" = "Final bets";
+
+/*  */
+"price" = "Price";
+
+/*  */
+"margin" = "Margin";
+
+/*  */
+"priceIsRightRules" = "Price Is Right Rules";
+
+/*  */
+"delete" = "Delete";
+
+/*  */
+"create" = "Create";
+
+/*  */
+"name" = "Name";
+
+/*  */
+"department" = "Department";
+
+/*  */
+"email" = "Email";
+
+/*  */
+"joinPoolHeaderImage" = "Join pool header image";
+
+/*  */
+"joinPoolSubtitle" = "Enter the details of the pool you wish to join. Inputs are case sensitive.";
+
+/*  */
+"addPoolSubtitleText" = "Create a new pool below. Users can join using the name, password and date inputs.";
+
+/*  */
+"editPoolSubtitleText" = "Edit your pool details below. Users can join using the name, password and date inputs.";
+
+/*  */
+"pirInfoImageDescription" = "Price is right rules info image";
+
+/*  */
+"tempMemberOptionDialogMessage" = "Select EDIT to modify member’s details, or select BET to place their bid.";
+
+/*  */
+"memberOptionsDialogTitle" = "Member Options";
+
+/*  */
+"setMemberBetTimeDialogTitle" = "Set Members Bet Time";
+
+/*  */
+"bettingMarginDialogTitle" = "Betting Margin";
+
+/*  */
+"bettingMarginDialogMessage" = "Time added to each bet, in 6-minute increments. If 0, only the closest bid will win.";
+
+/*  */
+"minutesDialogSpinnerText" = "/ Minutes";
+
+/*  */
+"poolDateDialogTitle" = "Set Bet Time";
+
+/*  */
+"poolDateDialogMessage" = "Set the pools date according to the call sheet.";
+
+/*  */
+"bidPriceDialogTitle" = "Bid Price";
+
+/*  */
+"bidPriceDialogMessage" = "Set the betting price for this pool.";
+
+/*  */
+"dollarSignImageDescription" = "Dollar sign image for spinner price";
+
+/*  */
+"memberNameHint" = "Member name";
+
+/*  */
+"memberEmailHint" = "Member email";
+
+/*  */
+"memberDepartmentHint" = "Member department";
+
+/*  */
+"createTempMemberDialogMessage" = "Enter temporary pool members details below.";
+
+/*  */
+"editTempMemberDialogMessage" = "Edit %@'s member details.";
+
+/*  */
+"addMemberDialogTitle" = "Add Member";
+
+/*  */
+"editMemberDialogTitle" = "Edit Member";
+
+/*  */
+"totalWinningsTitle" = "Total Winnings";
+
+/*  */
+"totalPoolsTitle" = "Total Pools";
+
+/*  */
+"totalBetsTitle" = "Total Bets";
+
+/*  */
+"actions" = "Actions";
+
+/*  */
+"createPoolFabDescription" = "Create pool fab";
+
+/*  */
+"joinPoolFabDescription" = "Join pool fab";
+
+/*  */
+"noSavedPoolsText" = "No Saved Pools";
+
+/*  */
+"poolStatusImageDescription" = "Pool status image";
+
+/*  */
+"poolAdminImageDescription" = "Pool admin image";
+
+/*  */
+"poolLoadedImageDescription" = "Pool loaded image";
+
+/*  */
+"tempMemberIconDescription" = "Temporary member icon";
+
+/*  */
+"memberProfileImageDescription" = "Member profile image";
+
+/*  */
+"tempMemberOptionsImageDescription" = "Admin temporary member options icon";
+
+/*  */
+"chatProfileImageDescription" = "Chat message profile image";
+
+/*  */
+"noActivePoolText" = "No Active Pool";
+
+/*  */
+"setWrapTimeFabDescription" = "Set pool wrap time fab";
+
+/*  */
+"placeBetFabDescription" = "Place bet fab";
+
+/*  */
+"homeFragmentTabLayoutDescription" = "Home fragment tabs";
+
+/*  */
+"bidAmountDialogTitle" = "Bid Amount";
+
+/*  */
+"poolAdminDialogTitle" = "Pool Administrator";
+
+/*  */
+"bettingMarginDialogPoolMessage" = "The current margin is %@ minutes for this pool. This time is added to any bets made.";
+
+/*  */
+"poolAdminDialogMessage" = "The administrator for this pool is %@. They are responsible for setting rules, adding temporary members and entering the wrap time.";
+
+/*  */
+"priceIsRightRulesDialogMessage" = "“The Price Is Right” rules designate a winner with the closest bet time to the wrap time without going over. For this pool the admin has set this to %@.";
+
+/*  */
+"bidAmountDialogMessage" = "The admin has set the bid price as $%@.00 for this pool.";
+
+/*  */
+"messageHint" = "Message";
+
+/*  */
+"sendFabDescription" = "Send message fab";
+
+/*  */
+"adminIconDescription" = "Admin icon image";
+
+/*  */
+"poolMemberIconDescription" = "Pool member icon";
+
+/*  */
+"poolBetsIconDescription" = "Pool bets icon";
+
+/*  */
+"bidCardViewTitle" = "Bid";
+
+/*  */
+"pirIconDescription" = "Price is right state icon";
+
+/*  */
+"poolAdminPictureDescription" = "Pool admin profile picture";
+
+/*  */
+"startTimeIconDescription" = "Start time icon";
+
+/*  */
+"wrapTimeIconDescription" = "Wrap time icon";
+
+/*  */
+"positionIconDescription" = "Position icon";
+
+/*  */
+"betTimeIconDescription" = "Bet time icon";
+
+/*  */
+"winnerEmailDialogTitle" = "%@'s Email:";
+
+/*  */
+"save" = "Save";
+
+/*  */
+"profilePictureDescription" = "Profile picture";
+
+/*  */
+"changePictureIconDescription" = "Change picture icon";
+
+/*  */
+"settings" = "Settings";
+
+/*  */
+"invite" = "Invite";
+
+/*  */
+"noNetworkCantUpdateMessage" = "No network connection, please reconnect before applying changes.";
+
+/*  */
+"noNetworkCantJoinMessage" = "No network connection, reconnect to join pool.";
+
+/*  */
+"accountSettings" = "Account Settings";
+
+/*  */
+"joinPool" = "Join Pool";
+
+/*  */
+"sendFeedbackDialogTitle" = "Send Feedback";
+
+/*  */
+"sendFeedbackDialogMessage" = "Are you experiencing issues with this app or have suggestions to improve your experience? Let us know below.";
+
+/*  */
+"feedback" = "Feedback";
+
+/*  */
+"feedbackDialogEmptyErrorToast" = "Please enter your message before sending.";
+
+/*  */
+"feedbackDialogSuccessToast" = "Thanks for sharing your feedback!";
+
+/*  */
+"share" = "Share";
+
+/*  */
+"inviteEmailIntentSubject" = "Welcome to Wrap Roulette";
+
+/*  */
+"inviteEmailIntentMessage" = "Ready to put your money where your mouth is? Join the Wrap Roulette community to start placing your bets.";
+
+/*  */
+"inviteIntentTitle" = "Share Via";
+
+/*  */
+"send" = "Send";
+
+/*  */
+"newPool" = "New Pool";
+
+/*  */
+"editPool" = "Edit Pool";
+
+/*  */
+"bet" = "Bet";
+
+/*  */
+"joinPoolErrorMultiplePools" = "Multiple pools have the same credentials, contact administrator to change pool values.";
+
+/*  */
+"joinPoolErrorNoResults" = "No pool found matching the provided credentials.";
+
+/*  */
+"poolExistsErrorMessage" = "Pool already exists.";
+
+/*  */
+"alreadyPoolMemberErrorMessage" = "You are already a member of this pool.";
+
+/*  */
+"memberExistsErrorMessage" = "Member already exists.";
+
+/*  */
+"imagePermissionsNeededErrorMessage" = "You need to grant permissions to select a new profile image.";
+
+/*  */
+"enterEmailErrorMessage" = "Please enter your email address.";
+
+/*  */
+"emailNotValidErrorMessage" = "Email address is not valid.";
+
+/*  */
+"resetEmailSentMessage" = "Reset link has been sent to your email address.";
+
+/*  */
+"enterPasswordErrorMessage" = "Please enter a password.";
+
+/*  */
+"enterNameErrorMessage" = "Please enter your name.";
+
+/*  */
+"enterDepartmentErrorMessage" = "Please enter your department.";
+
+/*  */
+"savedSuccessfullyMessage" = "Saved Successfully!";
+
+/*  */
+"noNetworkUpdateDelayMessage" = "Unable to connect to network, your changes will apply when reconnected.";
+
+/*  */
+"poolFinishedCantUpdateMemberMessage" = "This pool has finished, you are unable to make changes at this time.";
+
+/*  */
+"edit" = "Edit";
+
+/*  */
+"cancel" = "Cancel";
+
+/*  */
+"update" = "Update";
+
+/*  */
+"bettingLockedPoolActiveCantRemoveMemberMessage" = "Betting has locked and pool is still active, you are unable to remove this member at this time.";
+
+/*  */
+"clearBetBeforeLeavingMessage" = "You need to clear your bet before leaving this pool.";
+
+/*  */
+"unableRemoveMemberMessage" = "You are unable to remove this member at this time.";
+
+/*  */
+"setMembersBetDialogSubtitle" = "Set %@'s bid time using the spinner below.";
+
+/*  */
+"clear" = "Clear";
+
+/*  */
+"areYouSureDialogTitle" = "Are You Sure?";
+
+/*  */
+"areYouSureDialogSubtitle" = "Are you sure you want to delete this member for the pool?";
+
+/*  */
+"no" = "No";
+
+/*  */
+"yes" = "Yes";
+
+/*  */
+"poolHasntLoadedMessage" = "The pool has not loaded yet.";
+
+/*  */
+"noMemberEmailMessage" = "Member has not provided an email address.";
+
+/*  */
+"poolFinishedCantEditMessage" = "Pool has finished, you are unable to edit details.";
+
+/*  */
+"poolFinishedCantAddMemberMessage" = "Pool has finished, you are unable to add anymore members.";
+
+/*  */
+"bettingLockedPoolActiveCantLeaveMessage" = "Betting has locked and pool is still active, you are unable to leave at this time.";
+
+/*  */
+"clearBetToLeavePoolMessage" = "You need to clear your bet before leaving this pool.";
+
+/*  */
+"setWrapTimeDialogTitle" = "Set Wrap Time";
+
+/*  */
+"setWrapTimeDialogSubtitle" = "Select the wrap time using the spinner below. Once set you will be unable to edit the pool or place additional bets.";
+
+/*  */
+"setBetTimeDialogTitle" = "Set Bet Time";
+
+/*  */
+"setBetTimeDialogSubtitle" = "Use the spinner below to set your bet time.";
+
+/*  */
+"clearWrapConfirmDialogSubtitle" = "Are you sure you want to clear the set wrap time?";
+
+/*  */
+"confirmWrapConfirmDialogSubtitle" = "Please confirm the selected wrap time is correct: %@";
+
+/*  */
+"leavePoolConfirmDialogSubtitle" = "Are you sure you want to leave this pool?";
+
+/*  */
+"enterMembersNameErrorMessage" = "Please Enter Members Name";
+
+/*  */
+"enterMembersDepartmentErrorMessage" = "Please Enter Members Department";
+
+/*  */
+"unableToFindPoolErrorMessage" = "Unable To Find Pool";
+
+/*  */
+"doNotHavePermissionErrorMessage" = "You Do Not Have Permission";
+
+/*  */
+"unableToEditPool" = "You Are Unable To Edit This Pool";
+
+/*  */
+"summary" = "Summary";
+
+/*  */
+"bids" = "Bids";
+
+/*  */
+"deletePoolConfirmDialogSubtitle" = "You are about to delete this pool. Click Yes to continue or No to cancel.";
+
+/*  */
+"pirInfoDialogSubtitle" = "“The Price Is Right” rules designate a winner with the closest bet time to the wrap time without going over. \n\n *Exception if margins apply.";
+
+/*  */
+"pirInfoDialogTitle" = "Price Is Right Rules";
+
+/*  */
+"set" = "Set";
+
+/*  */
+"startTimeDialogTitle" = "Start Time";
+
+/*  */
+"lockBettingDialogTitle" = "Lock Betting";
+
+/*  */
+"startTimeDialogSubtitle" = "Set the pools start time according to the call sheet.";
+
+/*  */
+"lockBettingDialogSubtitle" = "At this time no additional bets can be made and are final.";
+
+/*  */
+"enterProductionNameErrorMessage" = "Please Enter Production Name";
+
+/*  */
+"enterPoolDateErrorMessage" = "Please Enter Pool Date";
+
+/*  */
+"enterPoolStartTimeErrorMessage" = "Please Enter Pool Start Time";
+
+/*  */
+"currentTime" = "Current Time";
+
+/*  */
+"noWinners" = "No Winners";
+
+/*  */
+"errorWrapNotSet" = "Error, Wrap Time Not Set";
+
+/*  */
+"winner" = "Winner";
+
+/*  */
+"winners" = "Winners";
+
+/*  */
+"noNetworkOutdatedMessage" = "Unable to connect to network, the pools data may be out of date.";
+
+/*  */
+"unableToLeavePoolMessage" = "You are unable to leave the pool at this time. Please contact the pools administrator.";
+
+/*  */
+"notFound" = "Not found";
