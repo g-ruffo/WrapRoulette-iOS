@@ -12,9 +12,48 @@ private var logoTextSize: CGFloat = 40
 
 struct ContentView: View {
     
+    @State private var buttonIsEnabled: Bool = false
+    @State private var email: String = ""
+    @State private var password: String = ""
+
+    
     var body: some View {
         VStack {
-            logoHeader
+            Group{
+                Spacer()
+                Spacer()
+                logoHeader
+                Spacer()
+            }
+            
+            Group{
+                InputEditText(leadingIcon: "mail", textHint: "Enter your email", textInput: $email)
+                InputEditText(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password, isPassword: true)
+            }
+                    
+            Button {
+            } label: {
+                Text("Forgot password?")
+                    .foregroundColor(.white)
+            }
+            .frame(maxWidth: .infinity, alignment: .trailing)
+            .padding(.all, 20)
+            
+            Spacer()
+            
+            SubmitButton(text: "Login", isEnabled: $buttonIsEnabled) {
+                print("login")
+            }
+            Spacer()
+
+            Button {
+            } label: {
+                Text("clickToSignUp")
+                    .foregroundColor(.white)
+            }
+            Spacer()
+
+
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("BluePrimary"))
@@ -43,7 +82,6 @@ struct ContentView: View {
             }
         }
     }
-    
     
 }
 

@@ -10,13 +10,14 @@ import SwiftUI
 private let textFieldFontSize: CGFloat = 14
 
 struct InputEditText: View {
-    @Binding var textInput: String
-    @State private var isSecured: Bool = true
     
-    var isPassword: Bool = false
-    var textHint: String = "Email Address"
     var leadingIcon: String = "mail"
-    
+    var textHint: String = "Email Address"
+    @Binding var textInput: String
+    var isPassword: Bool = false
+    @State private var isSecured: Bool = true
+
+
     var body: some View {
         ZStack(alignment: .trailing) {
             VStack {
