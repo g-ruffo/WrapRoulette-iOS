@@ -21,6 +21,9 @@
 		79BA6B4C2988E49C009E7732 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B4B2988E49C009E7732 /* Member.swift */; };
 		79BA6B4E2988E51B009E7732 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B4D2988E51B009E7732 /* Message.swift */; };
 		79BA6B502988E55D009E7732 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B4F2988E55D009E7732 /* Pool.swift */; };
+		79BA6B6F2988F2F2009E7732 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B6C2988F2F1009E7732 /* Ubuntu-Bold.ttf */; };
+		79BA6B702988F2F2009E7732 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B6D2988F2F1009E7732 /* Ubuntu-Regular.ttf */; };
+		79BA6B712988F2F2009E7732 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B6E2988F2F1009E7732 /* Ubuntu-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		79BA6B4B2988E49C009E7732 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		79BA6B4D2988E51B009E7732 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		79BA6B4F2988E55D009E7732 /* Pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
+		79BA6B6C2988F2F1009E7732 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		79BA6B6D2988F2F1009E7732 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		79BA6B6E2988F2F1009E7732 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 		79BA6B412988AA7C009E7732 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				79BA6B6B2988F2CF009E7732 /* Fonts */,
 				79455E6C296CE20D00C807B2 /* Assets.xcassets */,
 				79BA6B3C2988A72A009E7732 /* Localizable.strings */,
 			);
@@ -186,6 +193,16 @@
 				79BA6B4F2988E55D009E7732 /* Pool.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		79BA6B6B2988F2CF009E7732 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				79BA6B6C2988F2F1009E7732 /* Ubuntu-Bold.ttf */,
+				79BA6B6E2988F2F1009E7732 /* Ubuntu-Light.ttf */,
+				79BA6B6D2988F2F1009E7732 /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +309,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BA6B6F2988F2F2009E7732 /* Ubuntu-Bold.ttf in Resources */,
 				79455E70296CE20D00C807B2 /* Preview Assets.xcassets in Resources */,
 				79BA6B3D2988A72A009E7732 /* Localizable.strings in Resources */,
+				79BA6B702988F2F2009E7732 /* Ubuntu-Regular.ttf in Resources */,
+				79BA6B712988F2F2009E7732 /* Ubuntu-Light.ttf in Resources */,
 				79455E6D296CE20D00C807B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
