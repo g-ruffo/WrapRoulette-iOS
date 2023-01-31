@@ -27,14 +27,13 @@ struct SubmitButton: View {
                     .textCase(.uppercase)
                     .font(.system(size: buttonTextFontSize, weight: .bold))
                     .padding(.horizontal, buttonPaddingHorizontal)
-                    .padding(.vertical)
+                    .padding(.vertical, 12)
                 
             }
-            .disabled(isEnabled)
+            .disabled(!isEnabled)
             .background(buttonColor)
             .cornerRadius(buttonCornerRadius)
             .opacity(isEnabled ? 1.0 : disabledButtonOpacity)
-            .shadow(color: isEnabled ? .black : .clear, radius: shadowRadius)
             .scaleEffect(isEnabled ? 1 : disabledButtonScale)
             .animation(.spring(response: disabledButtonSpringAnimationResponse,
                                dampingFraction: disabledButtonSpringAnimationDamping, blendDuration: disabledButtonSpringAnimationDuration))

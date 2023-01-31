@@ -12,7 +12,7 @@ private var logoTextSize: CGFloat = 40
 
 struct ContentView: View {
     
-    @State private var buttonIsEnabled: Bool = false
+    @State private var buttonIsEnabled: Bool = true
     @State private var email: String = ""
     @State private var password: String = ""
 
@@ -37,7 +37,9 @@ struct ContentView: View {
                     .foregroundColor(.white)
             }
             .frame(maxWidth: .infinity, alignment: .trailing)
-            .padding(.all, 20)
+            .padding(.trailing, 30)
+            .padding(.top, 4)
+
             
             Spacer()
             

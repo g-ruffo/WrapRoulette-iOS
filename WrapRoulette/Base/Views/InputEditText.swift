@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private let textFieldFontSize: CGFloat = 14
+private let textFieldFontSize: CGFloat = 16
 
 struct InputEditText: View {
     
@@ -22,7 +22,7 @@ struct InputEditText: View {
         ZStack(alignment: .trailing) {
             VStack {
                 HStack {
-                    Spacer(minLength: 20)
+                    Spacer(minLength: 30)
                     HStack (alignment: .center,
                             spacing: 15) {
                         Image(systemName: leadingIcon)
@@ -35,8 +35,15 @@ struct InputEditText: View {
                         if isPassword {
                             if isSecured {
                                 SecureField(textHint, text: $textInput)
+                                    .font(Font.system(size: textFieldFontSize, design: .default))
+                                    .padding(.vertical, 10)
+
+
                             } else {
                                 TextField(textHint, text: $textInput)
+                                    .font(Font.system(size: textFieldFontSize, design: .default))
+                                    .padding(.vertical, 10)
+
                             }
                             Button(action: {
                                 isSecured.toggle()
@@ -45,26 +52,31 @@ struct InputEditText: View {
                                     .accentColor(Color("BluePrimary"))
                             }
                             
-                        } else {
+                        }
+                        else {
                             TextField (textHint, text: $textInput)
-                                .font(.system(size: textFieldFontSize))
+                                .font(Font.system(size: textFieldFontSize, design: .default))
+                                .padding(.vertical, 10)
+
+
                         }
                         
                     }
                             .padding([.top,.bottom], 2)
-                            .padding(.horizontal, 5)
+                            .padding(.horizontal, 15)
                             .background(Color("LoginInputLayoutBoxColor"), alignment: .center)
                             .cornerRadius(5)
-                    Spacer(minLength: 20)
+                    Spacer(minLength: 30)
                 }
                 if isPassword {
                     Text("\(textInput.count)/24")
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, alignment: .trailing)
-                        .padding(.trailing, 20)
+                        .padding(.trailing, 30)
                         .font(.system(size: textFieldFontSize, weight: .bold))
                 }
             }
+            .padding(.bottom, 8)
         }
     }
 }
