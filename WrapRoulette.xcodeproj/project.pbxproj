@@ -20,6 +20,7 @@
 		79BA6B492988E2EC009E7732 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B482988E2EC009E7732 /* Feedback.swift */; };
 		79BA6B4C2988E49C009E7732 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B4B2988E49C009E7732 /* Member.swift */; };
 		79BA6B4E2988E51B009E7732 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B4D2988E51B009E7732 /* Message.swift */; };
+		79BA6B502988E55D009E7732 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B4F2988E55D009E7732 /* Pool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		79BA6B482988E2EC009E7732 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		79BA6B4B2988E49C009E7732 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		79BA6B4D2988E51B009E7732 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		79BA6B4F2988E55D009E7732 /* Pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				79BA6B482988E2EC009E7732 /* Feedback.swift */,
 				79BA6B4B2988E49C009E7732 /* Member.swift */,
 				79BA6B4D2988E51B009E7732 /* Message.swift */,
+				79BA6B4F2988E55D009E7732 /* Pool.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */,
 				79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */,
 				79BA6B4E2988E51B009E7732 /* Message.swift in Sources */,
+				79BA6B502988E55D009E7732 /* Pool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
