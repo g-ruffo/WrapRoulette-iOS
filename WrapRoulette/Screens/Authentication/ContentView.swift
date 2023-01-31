@@ -15,8 +15,9 @@ struct ContentView: View {
     @State private var buttonIsEnabled: Bool = true
     @State private var email: String = ""
     @State private var password: String = ""
+    @State var emailAttempts: CGFloat = 0
 
-    
+
     var body: some View {
         VStack {
             Group{
@@ -27,7 +28,7 @@ struct ContentView: View {
             }
             
             Group{
-                StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email)
+                StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
                 PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password)
             }
                     
@@ -44,7 +45,9 @@ struct ContentView: View {
             Spacer()
             
             SubmitButton(text: "Login", isEnabled: $buttonIsEnabled) {
-                print("login")
+                withAnimation(.easeInOut) {
+                    self.emailAttempts += 1
+                }
             }
             Spacer()
 
