@@ -8,8 +8,8 @@
 import SwiftUI
 
 private var expandableFABRotation: CGFloat = 120
-private var disabledOpacity: Double = 0.6
-private var disabledScale: Double = 0.8
+let disabledButtonOpacity: Double = 0.6
+let disabledButtonScale: Double = 0.8
 private var shadowRadius: CGFloat = 6
 let colorEnabledFab = Color("ColorEnabledFab")
 let colorEnabledFabText = Color("ColorEnabledFabText")
@@ -37,9 +37,9 @@ struct ExpandableFloatingActionButton: View {
             .background(colorEnabledFab)
             .mask(Circle())
             .shadow(color: isEnabled ? .black : .clear, radius: shadowRadius)
-            .opacity(isEnabled ? 1.0 : disabledOpacity)
+            .opacity(isEnabled ? 1.0 : disabledButtonOpacity)
             .zIndex(10)
-            .scaleEffect(isEnabled ? 1 : disabledScale)
+            .scaleEffect(isEnabled ? 1 : disabledButtonScale)
                         .disabled(!isEnabled)
             .animation(.spring(response: 0.2, dampingFraction: 0.6, blendDuration: 0.2))
 
@@ -74,7 +74,7 @@ struct FloatingActionButtonMenuItem: View {
         .mask(Circle())
         .offset(x: isExpanded ? offsetX : 0, y: isExpanded ? offsety : 0)
         .scaleEffect(isExpanded ? 1 : 0)
-        .opacity(isEnabled ? 1.0 : disabledOpacity)
+        .opacity(isEnabled ? 1.0 : disabledButtonOpacity)
         .disabled(!isEnabled)
         .animation(.spring(response: 0.2, dampingFraction: 0.5, blendDuration: 0).delay(delay))
     }
@@ -97,9 +97,9 @@ struct FloatingActionButton: View {
             .background(colorEnabledFab)
             .mask(Circle())
             .shadow(color: isEnabled ? .black : .clear, radius: shadowRadius)
-            .opacity(isEnabled ? 1.0 : disabledOpacity)
+            .opacity(isEnabled ? 1.0 : disabledButtonOpacity)
             .zIndex(10)
-            .scaleEffect(isEnabled ? 1 : disabledScale)
+            .scaleEffect(isEnabled ? 1 : disabledButtonScale)
             .disabled(!isEnabled)
             .animation(.spring(response: 0.2, dampingFraction: 0.6, blendDuration: 0.2))
         }
