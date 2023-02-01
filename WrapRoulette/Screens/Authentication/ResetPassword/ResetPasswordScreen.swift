@@ -10,7 +10,7 @@ import SwiftUI
 let headerTitleSize: CGFloat = 34
 let headerSubtitleSize: CGFloat = 16
 
-struct ResetPassword: View {
+struct ResetPasswordScreen: View {
     
     @State private var buttonIsEnabled: Bool = true
     @State private var email: String = ""
@@ -19,7 +19,7 @@ struct ResetPassword: View {
     var body: some View {
         VStack {
             Spacer()
-            logoHeader
+            titleHeader
             textFields
             loginButton
             Spacer()
@@ -29,7 +29,7 @@ struct ResetPassword: View {
         .ignoresSafeArea()
     }
     
-    var logoHeader: some View {
+    var titleHeader: some View {
         VStack {
             Text("resetPasswordTitle")
                 .font(.system(size: headerTitleSize))
@@ -58,8 +58,8 @@ struct ResetPassword: View {
     }
 }
 
-struct ResetPassword_Previews: PreviewProvider {
+struct ResetPasswordScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ResetPassword()
+        ResetPasswordScreen()
     }
 }
