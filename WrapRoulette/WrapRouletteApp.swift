@@ -11,12 +11,14 @@ import Firebase
 @main
 struct WrapRouletteApp: App {
     
+    @StateObject var loginViewModel = LoginViewModel()
+    
     init() {
         FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: loginViewModel)
         }
     }
 }

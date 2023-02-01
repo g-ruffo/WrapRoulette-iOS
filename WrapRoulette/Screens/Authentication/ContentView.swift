@@ -12,6 +12,8 @@ private var logoTextSize: CGFloat = 40
 
 struct ContentView: View {
     
+    @ObservedObject var viewModel: LoginViewModel
+    
     @State private var buttonIsEnabled: Bool = true
     @State private var email: String = ""
     @State private var password: String = ""
@@ -98,10 +100,12 @@ struct ContentView: View {
                 .foregroundColor(.white)
         }
     }
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: LoginViewModel())
     }
 }
