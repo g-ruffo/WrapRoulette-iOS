@@ -19,6 +19,7 @@
 		798A9AF1298A0748003CCD5F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 798A9AF0298A0748003CCD5F /* FirebaseAuth */; };
 		798A9AF3298A0748003CCD5F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 798A9AF2298A0748003CCD5F /* FirebaseFirestore */; };
 		798A9AF7298A0B1A003CCD5F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A9AF6298A0B1A003CCD5F /* LoginViewModel.swift */; };
+		798A9AF9298A1865003CCD5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 798A9AF8298A1864003CCD5F /* GoogleService-Info.plist */; };
 		79BA6B3D2988A72A009E7732 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B3C2988A72A009E7732 /* Localizable.strings */; };
 		79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B3F2988AA34009E7732 /* SubmitButton.swift */; };
 		79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */; };
@@ -63,6 +64,7 @@
 		798A9AEA2989C645003CCD5F /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		798A9AED2989CE58003CCD5F /* UtilityViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityViews.swift; sourceTree = "<group>"; };
 		798A9AF6298A0B1A003CCD5F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		798A9AF8298A1864003CCD5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		79BA6B3C2988A72A009E7732 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		79BA6B3F2988AA34009E7732 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		79455E67296CE20A00C807B2 /* WrapRoulette */ = {
 			isa = PBXGroup;
 			children = (
+				798A9AF8298A1864003CCD5F /* GoogleService-Info.plist */,
 				79BA6B7529890766009E7732 /* Screens */,
 				79BA6B722988F446009E7732 /* Info.plist */,
 				79BA6B472988E2B7009E7732 /* Data */,
@@ -364,6 +367,7 @@
 				79BA6B702988F2F2009E7732 /* Ubuntu-Regular.ttf in Resources */,
 				79BA6B712988F2F2009E7732 /* Ubuntu-Light.ttf in Resources */,
 				79455E6D296CE20D00C807B2 /* Assets.xcassets in Resources */,
+				798A9AF9298A1865003CCD5F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
