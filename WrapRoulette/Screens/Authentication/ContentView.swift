@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-private var logoHorizontalPadding: CGFloat = 100.0
-private var logoTextSize: CGFloat = 40
+var logoHorizontalPadding: CGFloat = 100.0
+var logoTextSize: CGFloat = 40
 
 struct ContentView: View {
     
@@ -86,7 +86,7 @@ struct ContentView: View {
         .padding(.top, 4)
     }
     var loginButton: some View {
-        return SubmitButton(text: "Login", isEnabled: $buttonIsEnabled) {
+        return SubmitButton(text: "signIn", isEnabled: $buttonIsEnabled) {
             withAnimation(.easeInOut) {
                 emailAttempts += 1
                 passwordAttempts += 1
