@@ -28,18 +28,18 @@ struct PasswordTextField: View {
                             .foregroundColor(Color("BluePrimary"))
                             .frame(minWidth: 0, maxWidth: 30)
                             .frame(minHeight: 0, maxHeight: 33)
+                        
                         Group {
                             if isSecured { SecureField(textHint, text: $textInput) }
                             else { TextField(textHint, text: $textInput) }
                         }
-                        .font(Font.system(size: textFieldFontSize, design: .default))
-                        .padding(.vertical, 10)
+                        .font(Font.system(size: textFieldFontSize))
                         .autocorrectionDisabled()
                         .autocapitalization(.none)
+                        .modifier(TextLimit(value: $textInput, limit: 24))
                         .onChange(of: textInput, perform: { newValue in
                             if invalidAttempts != 0 { invalidAttempts = 0}
                         })
-                       
                         
                         Button(action: {
                             isSecured.toggle()
@@ -48,7 +48,7 @@ struct PasswordTextField: View {
                                 .accentColor(Color("BluePrimary"))
                         }
                     }
-                            .padding([.top,.bottom], 2)
+                            .padding(.vertical, 10)
                             .padding(.horizontal, 15)
                             .background(Color("LoginInputLayoutBoxColor"), alignment: .center)
                             .cornerRadius(5)
@@ -56,8 +56,8 @@ struct PasswordTextField: View {
                                 RoundedRectangle(cornerRadius: 5)
                                     .stroke(lineWidth: 2)
                                     .foregroundColor(invalidAttempts == 0 ? .clear : .red)
-                                )
-                                .modifier(ErrorShakeTextFieldEffect(animatableData: CGFloat(invalidAttempts)))
+                            )
+                            .modifier(ErrorShakeTextFieldEffect(animatableData: CGFloat(invalidAttempts)))
                     
                     Spacer(minLength: horizontalTextFieldSpacerWidth)
                 }
@@ -72,9 +72,9 @@ struct PasswordTextField: View {
 }
 
 struct PasswordTextField_Previews: PreviewProvider {
-    @State static var text = "Password"
+    @State static var text = "password"
     @State static var attempt: CGFloat = 1
-
+    
     static var previews: some View {
         VStack {
             PasswordTextField(textInput: $text, invalidAttempts: $attempt)
