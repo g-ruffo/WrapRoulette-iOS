@@ -20,44 +20,23 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Group{
+
+            Group {
+                Spacer()
                 Spacer()
                 Spacer()
                 logoHeader
                 Spacer()
-            }
-            
-            Group{
-                StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
-                PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password, invalidAttempts: $passwordAttempts)
-            }
-                    
-            Button {
-            } label: {
-                Text("Forgot password?")
-                    .foregroundColor(.white)
-            }
-            .frame(maxWidth: .infinity, alignment: .trailing)
-            .padding(.trailing, 30)
-            .padding(.top, 4)
+                Spacer()
 
+            }
             
+            textFields
+            forgotPassword
             Spacer()
-            
-            SubmitButton(text: "Login", isEnabled: $buttonIsEnabled) {
-                withAnimation(.easeInOut) {
-                    self.emailAttempts += 1
-                    self.passwordAttempts += 1
-
-                }
-            }
+            loginButton
             Spacer()
-
-            Button {
-            } label: {
-                Text("clickToSignUp")
-                    .foregroundColor(.white)
-            }
+            signupButton
             Spacer()
 
 
@@ -68,6 +47,7 @@ struct ContentView: View {
 
     }
     
+    
     var logoHeader: some View {
         VStack {
                 Image("LogoWhite")
@@ -76,7 +56,6 @@ struct ContentView: View {
                     .frame(maxWidth: 120)
                     .padding(.horizontal, logoHorizontalPadding)
             HStack{
-                Spacer()
                 Text("wrap")
                     .font(.custom("Ubuntu-Bold", size: logoTextSize))
                     .foregroundColor(.white)
@@ -84,12 +63,41 @@ struct ContentView: View {
                 Text("roulette")
                     .font(.custom("Ubuntu-Light", size: logoTextSize))
                     .foregroundColor(.white)
-                Spacer()
-
             }
         }
     }
-    
+    var textFields: some View {
+        VStack {
+            StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
+            
+            PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password, invalidAttempts: $passwordAttempts)
+        }
+    }
+    var forgotPassword: some View {
+        Button {
+        } label: {
+            Text("Forgot password?")
+                .foregroundColor(.white)
+        }
+        .frame(maxWidth: .infinity, alignment: .trailing)
+        .padding(.trailing, horizontalTextFieldSpacerWidth)
+        .padding(.top, 4)
+    }
+    var loginButton: some View {
+        return SubmitButton(text: "Login", isEnabled: $buttonIsEnabled) {
+            withAnimation(.easeInOut) {
+                emailAttempts += 1
+                passwordAttempts += 1
+            }
+        }
+    }
+    var signupButton: some View {
+        Button {
+        } label: {
+            Text("clickToSignUp")
+                .foregroundColor(.white)
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
