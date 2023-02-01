@@ -19,6 +19,7 @@
 		798A9AF1298A0748003CCD5F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 798A9AF0298A0748003CCD5F /* FirebaseAuth */; };
 		798A9AF3298A0748003CCD5F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 798A9AF2298A0748003CCD5F /* FirebaseFirestore */; };
 		798A9AF5298A0858003CCD5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 798A9AF4298A0857003CCD5F /* GoogleService-Info.plist */; };
+		798A9AF7298A0B1A003CCD5F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A9AF6298A0B1A003CCD5F /* LoginViewModel.swift */; };
 		79BA6B3D2988A72A009E7732 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B3C2988A72A009E7732 /* Localizable.strings */; };
 		79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B3F2988AA34009E7732 /* SubmitButton.swift */; };
 		79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */; };
@@ -63,6 +64,7 @@
 		798A9AEA2989C645003CCD5F /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		798A9AED2989CE58003CCD5F /* UtilityViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityViews.swift; sourceTree = "<group>"; };
 		798A9AF4298A0857003CCD5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		798A9AF6298A0B1A003CCD5F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		79BA6B3C2988A72A009E7732 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		79BA6B3F2988AA34009E7732 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				79455E6A296CE20A00C807B2 /* ContentView.swift */,
+				798A9AF6298A0B1A003CCD5F /* LoginViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				79BA6B492988E2EC009E7732 /* Feedback.swift in Sources */,
 				79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */,
 				79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */,
+				798A9AF7298A0B1A003CCD5F /* LoginViewModel.swift in Sources */,
 				79BA6B4E2988E51B009E7732 /* Message.swift in Sources */,
 				79BA6B502988E55D009E7732 /* Pool.swift in Sources */,
 				79BA6B7A29890AEB009E7732 /* StandardTextField.swift in Sources */,
