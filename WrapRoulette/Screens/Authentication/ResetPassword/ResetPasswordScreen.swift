@@ -21,7 +21,7 @@ struct ResetPasswordScreen: View {
             Spacer()
             titleHeader
             textFields
-            loginButton
+            resetButton
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -30,17 +30,16 @@ struct ResetPasswordScreen: View {
     }
     
     var titleHeader: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text("resetPasswordTitle")
                 .font(.system(size: headerTitleSize))
                 .foregroundColor(Color("LoginTextDarkBackgroundColor"))
-                .padding(.bottom, 10)
             
             Text("resetPasswordSubtitle")
                 .font(.system(size: headerSubtitleSize))
                 .foregroundColor(Color("LoginTextDarkBackgroundColor"))
         }
-        .padding(.horizontal, 18)
+        .padding(.horizontal, horizontalTextFieldSpacerWidth)
         .padding(.bottom, 42)
     }
     
@@ -49,7 +48,7 @@ struct ResetPasswordScreen: View {
             .padding(.bottom, 44)
     }
     
-    var loginButton: some View {
+    var resetButton: some View {
         return SubmitButton(text: "reset", isEnabled: $buttonIsEnabled) {
             withAnimation(.easeInOut) {
                 emailAttempts += 1
