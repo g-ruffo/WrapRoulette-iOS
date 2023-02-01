@@ -17,28 +17,36 @@ struct ResetPassword: View {
     @State var emailAttempts: CGFloat = 0
     
     var body: some View {
-        Spacer()
-        logoHeader
-        textFields
-        loginButton
-        Spacer()
+        VStack {
+            Spacer()
+            logoHeader
+            textFields
+            loginButton
+            Spacer()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("BluePrimary"))
+        .ignoresSafeArea()
     }
     
     var logoHeader: some View {
         VStack {
-                   Text("resetPasswordTitle")
+            Text("resetPasswordTitle")
                 .font(.system(size: headerTitleSize))
                 .foregroundColor(Color("LoginTextDarkBackgroundColor"))
-
-                Text("resetPasswordSubtitle")
-                    .font(.system(size: headerSubtitleSize))
-                    .foregroundColor(Color("LoginTextDarkBackgroundColor"))
+                .padding(.bottom, 10)
             
+            Text("resetPasswordSubtitle")
+                .font(.system(size: headerSubtitleSize))
+                .foregroundColor(Color("LoginTextDarkBackgroundColor"))
         }
+        .padding(.horizontal, 18)
+        .padding(.bottom, 42)
     }
     
     var textFields: some View {
-            StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
+        StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
+            .padding(.bottom, 44)
     }
     
     var loginButton: some View {

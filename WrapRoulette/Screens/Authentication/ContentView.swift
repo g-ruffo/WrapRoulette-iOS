@@ -22,7 +22,6 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-
             Group {
                 Spacer()
                 Spacer()
@@ -30,9 +29,7 @@ struct ContentView: View {
                 logoHeader
                 Spacer()
                 Spacer()
-
             }
-            
             textFields
             forgotPassword
             Spacer()
@@ -40,8 +37,6 @@ struct ContentView: View {
             Spacer()
             signupButton
             Spacer()
-
-
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("BluePrimary"))
