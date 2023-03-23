@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Combine
 
 
 struct ErrorShakeTextFieldEffect: GeometryEffect {
@@ -20,16 +19,4 @@ struct ErrorShakeTextFieldEffect: GeometryEffect {
 }
 
 
-struct TextLimit: ViewModifier {
-    @Binding var value: String
-    var limit: Int
-    
-    func body(content: Content) -> some View {
-        return content
-            .onReceive(Just(self.value)) { inputValue in
-            if inputValue.count > limit {
-                self.value.removeLast()
-            }
-        }
-    }
-}
+

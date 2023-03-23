@@ -24,6 +24,7 @@
 		798A9AF9298A1865003CCD5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 798A9AF8298A1864003CCD5F /* GoogleService-Info.plist */; };
 		798A9AFC298A2AA6003CCD5F /* ResetPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A9AFB298A2AA6003CCD5F /* ResetPasswordScreen.swift */; };
 		798A9AFF298A31D8003CCD5F /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A9AFE298A31D8003CCD5F /* SignUpScreen.swift */; };
+		798C4E7629CBE73B00812975 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C4E7529CBE73B00812975 /* Modifiers.swift */; };
 		79BA6B3D2988A72A009E7732 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6B3C2988A72A009E7732 /* Localizable.strings */; };
 		79BA6B402988AA34009E7732 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B3F2988AA34009E7732 /* SubmitButton.swift */; };
 		79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */; };
@@ -73,6 +74,7 @@
 		798A9AF8298A1864003CCD5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		798A9AFB298A2AA6003CCD5F /* ResetPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordScreen.swift; sourceTree = "<group>"; };
 		798A9AFE298A31D8003CCD5F /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		798C4E7529CBE73B00812975 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		79BA6B3C2988A72A009E7732 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		79BA6B3F2988AA34009E7732 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		79BA6B432988C4DA009E7732 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
@@ -207,9 +209,18 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		798C4E7429CBE6F200812975 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				798C4E7529CBE73B00812975 /* Modifiers.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		79BA6B3E2988A9D9009E7732 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				798C4E7429CBE6F200812975 /* Modifier */,
 				79BA6B462988C580009E7732 /* Views */,
 			);
 			path = Base;
@@ -439,6 +450,7 @@
 				798A9AFF298A31D8003CCD5F /* SignUpScreen.swift in Sources */,
 				79BA6B442988C4DA009E7732 /* FloatingActionButton.swift in Sources */,
 				798A9AFC298A2AA6003CCD5F /* ResetPasswordScreen.swift in Sources */,
+				798C4E7629CBE73B00812975 /* Modifiers.swift in Sources */,
 				798A9AF7298A0B1A003CCD5F /* LoginViewModel.swift in Sources */,
 				79BA6B4E2988E51B009E7732 /* Message.swift in Sources */,
 				79BA6B502988E55D009E7732 /* Pool.swift in Sources */,
