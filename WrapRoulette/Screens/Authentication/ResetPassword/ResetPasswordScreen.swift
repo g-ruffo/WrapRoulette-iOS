@@ -17,17 +17,18 @@ struct ResetPasswordScreen: View {
     @State var emailAttempts: CGFloat = 0
     
     var body: some View {
-        VStack {
-            Spacer()
-            titleHeader
-            textFields
-            resetButton
-            Spacer()
+        NavigationView {
+            VStack {
+                Spacer()
+                titleHeader
+                textFields
+                resetButton
+                Spacer()
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("BluePrimary"))
+            .ignoresSafeArea()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("BluePrimary"))
-        .ignoresSafeArea()
-        .applyBackButon()
     }
     
     var titleHeader: some View {

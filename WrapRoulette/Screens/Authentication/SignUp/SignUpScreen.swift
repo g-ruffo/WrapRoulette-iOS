@@ -31,7 +31,6 @@ struct SignUpScreen: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("BluePrimary"))
             .ignoresSafeArea()
-            .applyBackButon()
         }
     }
     

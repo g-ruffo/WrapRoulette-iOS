@@ -14,6 +14,8 @@ struct LoginScreen: View {
     
     @ObservedObject var viewModel: LoginViewModel
     
+    @State private var showSignup = false
+    @State private var showResetPassword = false
     @State private var buttonIsEnabled: Bool = true
     @State private var email: String = ""
     @State private var password: String = ""
@@ -71,10 +73,9 @@ struct LoginScreen: View {
         }
     }
     var forgotPassword: some View {
-        Button {
-        } label: {
-            Text("Forgot password?")
-                .foregroundColor(.white)
+        NavigationLink(destination: ResetPasswordScreen()) {
+                Text("Forgot password?")
+                    .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity, alignment: .trailing)
         .padding(.trailing, horizontalTextFieldSpacerWidth)
@@ -89,13 +90,12 @@ struct LoginScreen: View {
         }
     }
     var signupButton: some View {
-        Button {
-        } label: {
-            Text("clickToSignUp")
-                .foregroundColor(.white)
+        NavigationLink(destination: ResetPasswordScreen()) {
+                Text("clickToSignUp")
+                    .foregroundColor(.white)
+            
         }
     }
-    
 
 }
 
