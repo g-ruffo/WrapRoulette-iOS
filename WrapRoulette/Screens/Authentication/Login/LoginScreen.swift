@@ -65,9 +65,9 @@ struct LoginScreen: View {
     }
     var textFields: some View {
         VStack {
-            StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
+            EmailTextField(textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
             
-            PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password, invalidAttempts: $passwordAttempts)
+            PasswordTextField(textHint: "Enter your password", textInput: $password, invalidAttempts: $passwordAttempts)
         }
     }
     var forgotPassword: some View {

@@ -7,13 +7,15 @@
 
 import SwiftUI
 
+
 struct PasswordTextField: View {
     
-    var leadingIcon: String = "lock.square"
     var textHint: String = "Enter Password"
     @Binding var textInput: String
     @State private var isSecured: Bool = true
     @Binding var invalidAttempts: CGFloat
+    
+    private let leadingIcon: String = "lock.square"
     
     var body: some View {
         ZStack(alignment: .trailing) {

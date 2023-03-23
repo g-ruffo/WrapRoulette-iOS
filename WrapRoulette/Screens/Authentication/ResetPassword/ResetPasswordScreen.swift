@@ -44,7 +44,7 @@ struct ResetPasswordScreen: View {
     }
     
     var textFields: some View {
-        StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
+        EmailTextField(textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
             .padding(.bottom, 44)
     }
     

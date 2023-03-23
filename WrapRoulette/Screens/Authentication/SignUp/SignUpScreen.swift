@@ -52,13 +52,13 @@ struct SignUpScreen: View {
                 .autocapitalization(.words)
                 .autocorrectionDisabled()
             
-            StandardTextField(leadingIcon: "mail", textHint: "Enter your email", textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
+            EmailTextField(textInput: $email, inputType: .emailAddress, invalidAttempts: $emailAttempts)
             
             StandardTextField(leadingIcon: "building.2.crop.circle", textHint: "Enter your department", textInput: $email, inputType: .alphabet, invalidAttempts: $emailAttempts)
                 .autocapitalization(.words)
                 .autocorrectionDisabled(false)
             
-            PasswordTextField(leadingIcon: "lock.square", textHint: "Enter your password", textInput: $password, invalidAttempts: $passwordAttempts)
+            PasswordTextField(textHint: "Enter your password", textInput: $password, invalidAttempts: $passwordAttempts)
                 .padding(.bottom, 44)
         }
     }

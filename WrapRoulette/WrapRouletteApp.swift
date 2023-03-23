@@ -28,7 +28,7 @@ struct WrapRouletteApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                
+                LoginScreen(viewModel: loginViewModel)
             }
         }
     }

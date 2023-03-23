@@ -61,7 +61,7 @@ struct StandardTextField: View {
 }
 
 struct InputEditText_Previews: PreviewProvider {
-    @State static var text = "Enter email"
+    @State static var text = "Enter text"
     @State static var attempt: CGFloat = 1
     
     static var previews: some View {
