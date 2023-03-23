@@ -6,18 +6,32 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 
 class LoginViewModel: ObservableObject {
     
+    let auth = Auth.auth()
     
     
-//    func login() {
-//        Auth.auth().signIn(withEmal: email, password: password) { result, error in
-//            if error != nil {
-//                print(error!.localizedDescription)
-//            }
-//            
-//        }
-//    }
+    
+    var isSignedIn: Bool {
+        return auth.currentUser != nil
+    }
+    
+    func signIn(email: String, password: String) {
+        auth.signIn(withEmail: email, password: password) { result, error in
+            guard result != nil, error == nil else {
+                return
+            }
+        }
+    }
+    
+    func signUp(email: String, password: String) {
+        auth.createUser(withEmail: email, password: password) { result, error in
+            guard result != nil, error == nil else {
+                return
+            }
+        }
+    }
 }

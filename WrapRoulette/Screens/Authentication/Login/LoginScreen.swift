@@ -12,7 +12,8 @@ var logoTextSize: CGFloat = 40
 
 struct LoginScreen: View {
     
-    @ObservedObject var viewModel: LoginViewModel
+//    @ObservedObject var viewModel: LoginViewModel
+    @EnvironmentObject var viewModel: LoginViewModel
     
     @State private var showSignup = false
     @State private var showResetPassword = false
@@ -83,6 +84,12 @@ struct LoginScreen: View {
     }
     var loginButton: some View {
         return SubmitButton(text: "signIn", isEnabled: $buttonIsEnabled) {
+            
+            guard !email.isEmpty, !password.isEmpty else {
+                return
+            }
+                    
+            viewModel.signIn(email: email, password: password)
             withAnimation(.easeInOut) {
                 emailAttempts += 1
                 passwordAttempts += 1
@@ -101,6 +108,7 @@ struct LoginScreen: View {
 
 struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen(viewModel: LoginViewModel())
+//        LoginScreen(viewModel: LoginViewModel())
+        LoginScreen()
     }
 }

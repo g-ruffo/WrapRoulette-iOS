@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FirebaseCore
+import Firebase
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -23,12 +23,15 @@ struct WrapRouletteApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    @StateObject var loginViewModel = LoginViewModel()
+//    @StateObject var loginViewModel = LoginViewModel()
+    let loginViewModel = LoginViewModel()
 
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                LoginScreen(viewModel: loginViewModel)
+                LoginScreen()
+                    .environmentObject(loginViewModel)
+                    
             }
         }
     }
