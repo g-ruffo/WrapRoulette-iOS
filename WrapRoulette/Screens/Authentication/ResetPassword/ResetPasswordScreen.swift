@@ -27,6 +27,7 @@ struct ResetPasswordScreen: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("BluePrimary"))
         .ignoresSafeArea()
+        .applyBackButon()
     }
     
     var titleHeader: some View {

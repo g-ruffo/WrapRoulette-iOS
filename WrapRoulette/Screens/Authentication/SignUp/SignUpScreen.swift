@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SignUpScreen: View {
-    
+
     @State private var buttonIsEnabled: Bool = true
     @State private var name: String = ""
     @State private var email: String = ""
@@ -19,32 +19,36 @@ struct SignUpScreen: View {
     @State var passwordAttempts: CGFloat = 0
     
     var body: some View {
-        VStack {
-            Spacer()
-            titleHeader
-            textFields
-            signUpButton
-            Spacer()
+
+        NavigationView {
+            VStack {
+                Spacer()
+                titleHeader
+                textFields
+                signUpButton
+                Spacer()
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("BluePrimary"))
+            .ignoresSafeArea()
+            .applyBackButon()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("BluePrimary"))
-        .ignoresSafeArea()
     }
     
-    var titleHeader: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("signUpTitle")
-                .font(.system(size: logoTextSize))
-                .foregroundColor(Color("LoginTextDarkBackgroundColor"))
-            
-            Text("signUpSubtitle")
-                .font(.system(size: headerSubtitleSize))
-                .foregroundColor(Color("LoginTextDarkBackgroundColor"))
+        var titleHeader: some View {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("signUpTitle")
+                    .font(.system(size: logoTextSize))
+                    .foregroundColor(Color("LoginTextDarkBackgroundColor"))
+                
+                Text("signUpSubtitle")
+                    .font(.system(size: headerSubtitleSize))
+                    .foregroundColor(Color("LoginTextDarkBackgroundColor"))
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, horizontalTextFieldSpacerWidth)
+            .padding(.bottom, 42)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal, horizontalTextFieldSpacerWidth)
-        .padding(.bottom, 42)
-    }
     
     var textFields: some View {
         VStack {
