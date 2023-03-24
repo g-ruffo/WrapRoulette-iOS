@@ -24,9 +24,10 @@ struct WrapRouletteApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
 //    @StateObject var loginViewModel = LoginViewModel()
-    let loginViewModel = LoginViewModel()
 
     var body: some Scene {
+        let loginViewModel = LoginViewModel()
+
         WindowGroup {
             NavigationView {
                 LoginScreen()
