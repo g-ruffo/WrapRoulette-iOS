@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SignUpScreen: View {
+    
+    @EnvironmentObject var viewModel: FirebaseAuthViewModel
 
     @State private var buttonIsEnabled: Bool = true
     @State private var name: String = ""
