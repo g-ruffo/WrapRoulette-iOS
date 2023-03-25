@@ -12,9 +12,8 @@ var logoTextSize: CGFloat = 40
 
 struct LoginScreen: View {
     
-//    @ObservedObject var viewModel: LoginViewModel
-    @EnvironmentObject var viewModel: LoginViewModel
-    
+    @EnvironmentObject var viewModel: FirebaseAuthViewModel
+
     @State private var showSignup = false
     @State private var showResetPassword = false
     @State private var buttonIsEnabled: Bool = true
@@ -46,7 +45,6 @@ struct LoginScreen: View {
         .ignoresSafeArea()
 
     }
-    
     
     var logoHeader: some View {
         VStack {
