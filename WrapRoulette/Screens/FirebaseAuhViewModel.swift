@@ -24,6 +24,14 @@ final class FirebaseAuthViewModel: ObservableObject {
         }
     }
     
+    func signIn(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            guard result != nil, error == nil else {
+                return
+            }
+        }
+    }
+    
     func signUp(
         emailAddress: String,
         password: String
