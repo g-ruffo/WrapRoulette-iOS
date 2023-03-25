@@ -23,15 +23,11 @@ struct WrapRouletteApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-//    @StateObject var loginViewModel = LoginViewModel()
-
     var body: some Scene {
-        let loginViewModel = LoginViewModel()
-
         WindowGroup {
             NavigationView {
-                LoginScreen()
-                    .environmentObject(loginViewModel)
+                ContentView()
+                    .environmentObject(FirebaseAuthViewModel())
                     
             }
         }
